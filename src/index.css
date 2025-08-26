@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-afacad: Afacad, "sans-serif";
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow: hidden;
+  @apply font-afacad bg-white text-neutral-700;
+}
+
+@utility fit-size {
+  @apply h-fit w-fit;
+}
